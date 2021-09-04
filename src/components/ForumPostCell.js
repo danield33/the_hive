@@ -1,27 +1,27 @@
 import {ProfilePicture} from "./ProfilePicture";
 import '../index.css'
 
-export function ForumPostCell() {
-    return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flex: 1,
-        }}>
+export function ForumPostCell({item}) {
 
+    const {index, username, postName} = item;
+
+    return (
+        <div className={'formPostCellContainer'}>
+
+            <div className={'cellNumber'}>
+                <p style={{fontSize: 30, alignSelf: 'center'}}>{index + 1}</p>
+            </div>
             <div className={'forumPostCell'}>
                 <ProfilePicture size={75}/>
                 <p style={{
                     fontSize: 30,
-                }}>Daniel</p>
+                }}>{username}</p>
             </div>
-            <div style={{
-                'display': 'flex',
-                flex: 1
-            }}>
-                <p style={{fontSize: 30, marginLeft: 20}}>Covid-19 Disaster Plan</p>
+            <div>
+                <p style={{fontSize: 30, marginLeft: 20}}>{postName}</p>
             </div>
 
         </div>
+
     );
 };

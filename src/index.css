@@ -45,3 +45,22 @@ code {
   border-right: black solid 2px;
   width: 35%
 }
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.formPostCellContainer{
+  display: flex;
+  flex-direction: row;
+  border-bottom: black 2px solid
+}
+
+.cellNumber{
+  border-right: black 2px solid;
+}
+
+.cellNumber p{
+  padding: 10px
+}

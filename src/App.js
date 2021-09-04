@@ -2,6 +2,45 @@ import './index.css'
 import {NavigationBar} from "./components/NavigationBar";
 import {ForumList} from "./components/ForumList";
 
+const data = [
+    {
+        username: "Daniel",
+        postName: 'Covid 19 Disaster Relief'
+    },
+    {
+        username: "Jayden",
+        postName: 'World Peace'
+    },
+    {
+        username: "Courtney",
+        postName: 'World Hunger'
+    },
+    {
+        username: "Daniel",
+        postName: 'Covid 19 Disaster Relief'
+    },
+    {
+        username: "Jayden",
+        postName: 'World Peace'
+    },
+    {
+        username: "Courtney",
+        postName: 'World Hunger'
+    },
+    {
+        username: "Daniel",
+        postName: 'Covid 19 Disaster Relief'
+    },
+    {
+        username: "Jayden",
+        postName: 'World Peace'
+    },
+    {
+        username: "Courtney",
+        postName: 'World Hunger'
+    },
+]
+
 function App() {
     return (
         <body>
@@ -18,7 +57,7 @@ function App() {
                 justifyContent: 'space-between'
             }}>
 
-                <ForumList/>
+                <ForumList data={data}/>
 
             </div>
 
