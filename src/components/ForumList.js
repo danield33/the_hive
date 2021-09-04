@@ -7,9 +7,12 @@ export function ForumList({data}) {
         <div style={{
             display: "flex",
             flex:1,
-            backgroundColor: 'white'
+            backgroundColor: 'white',
+            marginTop: 50,
+            flexDirection: 'column'
         }}>
 
+            <ForumPostCell/>
             <ForumPostCell/>
 
         </div>

@@ -37,3 +37,11 @@ code {
   height: 30px;
   font-size: 30px
 }
+
+.forumPostCell{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-right: black solid 2px;
+  width: 35%
+}
