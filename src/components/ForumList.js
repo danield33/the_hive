@@ -1,20 +1,13 @@
 import {ForumPostCell} from "./ForumPostCell";
 import useWindowDimensions from "./hooks/useWindowDimensions";
 
+import '../index.css'
 
 export function ForumList({data = []}) {
 
-
     const {height} = useWindowDimensions();
-    console.log(data)
     return (
-        <div style={{
-            display: "flex",
-            flex: 1,
-            backgroundColor: 'white',
-            marginTop: 50,
-            flexDirection: 'column',
-        }}>
+        <div className={'forumList'}>
 
             <div style={{
                 height: height*.8,

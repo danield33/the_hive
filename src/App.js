@@ -1,6 +1,7 @@
 import './index.css'
 import {NavigationBar} from "./components/NavigationBar";
 import {ForumList} from "./components/ForumList";
+import {CreatedList} from "./components/CreatedList";
 
 const data = [
     {
@@ -58,6 +59,11 @@ function App() {
             }}>
 
                 <ForumList data={data}/>
+                <div style={{
+                    marginLeft: 20
+                }}>
+                    <CreatedList/>
+                </div>
 
             </div>
 
