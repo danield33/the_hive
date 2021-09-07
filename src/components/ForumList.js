@@ -10,7 +10,7 @@ export function ForumList({data = []}) {
         <div className={'forumList'}>
 
             <div style={{
-                height: height*.8,
+                height:500,
                 overflowY: 'scroll',
             }}>
                 {
