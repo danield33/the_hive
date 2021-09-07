@@ -7,18 +7,18 @@ export function ForumList({data = []}) {
 
     const {height} = useWindowDimensions();
     return (
-        <div className={'forumList'}>
 
-            <div style={{
-                height:500,
+        <div
+            className={'forumList'}
+            style={{
+                height: '100%',
                 overflowY: 'scroll',
             }}>
-                {
-                    data.map((i, j) => <ForumPostCell key={j} item={{...i, index: j}}/>)
-                }
-
-            </div>
+            {
+                data.map((i, j) => <ForumPostCell key={j} item={{...i, index: j}}/>)
+            }
 
         </div>
+
     );
 }

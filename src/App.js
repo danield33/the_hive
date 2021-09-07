@@ -44,33 +44,33 @@ const data = [
 
 function App() {
     return (
-        <body>
-        <NavigationBar items={["Your Account", "Your Groups", "The Hive"]}/>
+        <div>
 
-        <div style={{padding: 20}}>
-            <input type='text'
-                   placeholder={'Search'}
-                   className={'searchBar'}/>
+            <NavigationBar items={["Your Account", "Your Groups", "The Hive"]}/>
 
-            <div style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between'
-            }}>
+            <div style={{padding: 20}}>
+                <input type='text'
+                       placeholder={'Search'}
+                       className={'searchBar'}/>
 
-                <ForumList data={data}/>
                 <div style={{
-                    marginLeft: 20
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between'
                 }}>
-                    <CreatedList/>
+
+                    <ForumList data={data}/>
+                    <div style={{
+                        marginLeft: 20
+                    }}>
+                        <CreatedList/>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
-
-
-        </body>
 
     );
 }
