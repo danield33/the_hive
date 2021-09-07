@@ -5,13 +5,12 @@ import '../index.css'
 
 export function ForumList({data = []}) {
 
-    const {height} = useWindowDimensions();
     return (
 
         <div
             className={'forumList'}
             style={{
-                height: '100%',
+                height:'100%',
                 overflowY: 'scroll',
             }}>
             {
