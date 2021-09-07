@@ -13,7 +13,7 @@ export function ForumList({data = []}) {
         }}>
 
             <div style={{
-                height: '500',
+                height: 500,
                 overflowY: 'scroll',
             }}>
                 {
