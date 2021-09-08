@@ -17,6 +17,10 @@ export function CreatedList({data = []}) {
         )
     }
 
+    const navigateToPost = () => {
+        alert(1)
+    }
+
     return (
         <div className={'forumList'}>
 
@@ -31,7 +35,7 @@ export function CreatedList({data = []}) {
                 }
             </div>
 
-            <div className={'triangle'} style={{alignSelf: 'flex-end'}}>
+            <div className={'triangle'} style={{alignSelf: 'flex-end'}} >
                 <p style={{
                     transform: 'rotate(310deg)',
                     position: 'absolute',
