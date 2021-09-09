@@ -1,78 +1,28 @@
 import './index.css'
-import {NavigationBar} from "./components/NavigationBar";
-import {ForumList} from "./components/ForumList";
-import {CreatedList} from "./components/CreatedList";
+import {Link, Route, Router, Switch, BrowserRouter} from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import ForumPost from "./screens/ForumPost"
 
-const data = [
-    {
-        username: "Daniel",
-        postName: 'Covid 19 Disaster Relief'
-    },
-    {
-        username: "Jayden",
-        postName: 'World Peace'
-    },
-    {
-        username: "Courtney",
-        postName: 'World Hunger'
-    },
-    {
-        username: "Daniel",
-        postName: 'Covid 19 Disaster Relief'
-    },
-    {
-        username: "Jayden",
-        postName: 'World Peace'
-    },
-    {
-        username: "Courtney",
-        postName: 'World Hunger'
-    },
-    {
-        username: "Daniel",
-        postName: 'Covid 19 Disaster Relief'
-    },
-    {
-        username: "Jayden",
-        postName: 'World Peace'
-    },
-    {
-        username: "Courtney",
-        postName: 'World Hunger'
-    },
-]
 
 function App() {
-    return (
+    return(
         <div>
+            <BrowserRouter>
 
-            <NavigationBar items={["Your Account", "Your Groups", "The Hive"]}/>
+                <div>
 
-            <div style={{padding: 20}}>
-                <input type='text'
-                       placeholder={'Search'}
-                       className={'searchBar'}/>
+                    <Switch>
+                        <Route path={'/'}>
+                            <HomeScreen/>
+                        </Route>
 
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between'
-                }}>
-
-                    <ForumList data={data}/>
-                    <div style={{
-                        marginLeft: 20
-                    }}>
-                        <CreatedList/>
-                    </div>
+                    </Switch>
 
                 </div>
-
-            </div>
-
+            </BrowserRouter>
         </div>
 
-    );
+    )
 }
 
 export default App;

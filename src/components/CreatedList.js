@@ -1,6 +1,9 @@
 import '../index.css'
 import {ForumPostCell} from "./ForumPostCell";
 import useWindowDimensions from "./hooks/useWindowDimensions";
+import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
+import ForumPost from "../screens/ForumPost";
+import React from "react";
 
 export function CreatedList({data = []}) {
 
@@ -35,15 +38,30 @@ export function CreatedList({data = []}) {
                 }
             </div>
 
-            <div className={'triangle'} style={{alignSelf: 'flex-end'}} >
-                <p style={{
-                    transform: 'rotate(310deg)',
-                    position: 'absolute',
-                    marginLeft: -60,
-                    marginTop: 45,
-                    textAlign: 'center'
-                }}>Publish Idea</p>
-            </div>
+            <Link to={'/forumPost'}>
+                <div className={'triangle'} style={{alignSelf: 'flex-end'}} >
+                    <p style={{
+                        transform: 'rotate(310deg)',
+                        position: 'absolute',
+                        marginLeft: -60,
+                        marginTop: 45,
+                        textAlign: 'center'
+                    }}>Publish Idea</p>
+                </div>
+            </Link>
+
+            <BrowserRouter>
+                <div>
+                    <Switch>
+
+                        <Route path={'/forumPost'}>
+                            <ForumPost/>
+                        </Route>
+                    </Switch>
+                </div>
+
+            </BrowserRouter>
+
 
         </div>
     );
