@@ -15,6 +15,9 @@ function App() {
                         <Route path={'/'}>
                             <HomeScreen/>
                         </Route>
+                        <Route path={'/forumPost'}>
+                            <ForumPost/>
+                        </Route>
 
                     </Switch>
 
