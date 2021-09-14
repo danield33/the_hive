@@ -4,6 +4,7 @@ import useWindowDimensions from "./hooks/useWindowDimensions";
 import {BrowserRouter, Link, Route, Router, Switch} from "react-router-dom";
 import ForumPost from "../screens/ForumPost";
 import React from "react";
+import {Nav} from 'react-bootstrap';
 
 export function CreatedList({data = []}) {
 
@@ -21,7 +22,7 @@ export function CreatedList({data = []}) {
     }
 
     return (
-        <BrowserRouter>
+
             <div className={'forumList'}>
 
                 <div style={{
@@ -35,7 +36,7 @@ export function CreatedList({data = []}) {
                     }
                 </div>
 
-                <Link to={'/forumPost'}>
+                <Nav.Link href={'/Post'}>
                     <div className={'triangle'} style={{alignSelf: 'flex-end'}} >
                         <p style={{
                             transform: 'rotate(310deg)',
@@ -45,18 +46,9 @@ export function CreatedList({data = []}) {
                             textAlign: 'center'
                         }}>Publish Idea</p>
                     </div>
-                </Link>
-
-                        <Switch>
-                            <Route path={'/forumPost'}>
-                                <div>
-                                    <ForumPost/>
-                                </div>
-                            </Route>
-                        </Switch>
+                </Nav.Link>
 
             </div>
-        </BrowserRouter>
 
     );
 };

@@ -2,27 +2,13 @@ import './index.css'
 import {Link, Route, Router, Switch, BrowserRouter} from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ForumPost from "./screens/ForumPost"
+import Routes from "./Routes";
 
 
 function App() {
     return(
         <div>
-            <BrowserRouter>
-
-                <div>
-
-                    <Switch>
-                        <Route path={'/'}>
-                            <HomeScreen/>
-                        </Route>
-                        <Route path={'/forumPost'}>
-                            <ForumPost/>
-                        </Route>
-
-                    </Switch>
-
-                </div>
-            </BrowserRouter>
+            <Routes/>
         </div>
 
     )
