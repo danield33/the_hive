@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import './styles.css'
 import {Dropdown} from "../../components/Dropdown";
 import {Switch} from "../../components/Switch";
@@ -18,14 +17,18 @@ class Account extends Component {
 
     render() {
         return (
-            <div>
-                <table border={2}>
+            <div style={{display: 'flex', flex: 1}}>
+                <table border={1} style={{flex: 1}}>
                     <tr>
                         <th>
-                            Personal Information
+                           <p style={{fontSize: 20}}>
+                               Personal Information
+                           </p>
                         </th>
                         <th>
-                            Display Settings
+                            <p style={{fontSize: 20}}>
+                                Display Settings
+                            </p>
                         </th>
                     </tr>
                     <tr>
@@ -58,7 +61,7 @@ class Account extends Component {
                             </div>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
                                 <p className={'inputName'}>Bio/Other Info</p>
-                                <textarea/>
+                                <textarea style={{fontSize: 20}}/>
                             </div>
 
                         </td>
