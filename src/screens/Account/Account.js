@@ -68,7 +68,10 @@ class Account extends Component {
                             <div className={'tblDesc'}>
                                 <div>
                                     <p className={'inputName'}>Language:</p>
-                                    <Dropdown data={[
+                                    <Dropdown
+                                    selectStyle={{fontSize: 20}}
+                                    optionStyle={{fontSize: 20}}
+                                        data={[
                                         {
                                             text: "English",
                                             val: "eng"
@@ -89,9 +92,11 @@ class Account extends Component {
                             </div>
 
                             <br/><br/>
-                            <p className={'inputName'}>Invitations</p>
-                            <br/>
-                            <p className={'inputName'}>Group Requests</p>
+                            <div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
+                                <p className={'inputName center'}>Invitations</p>
+                                <br/>
+                                <p className={'inputName center'}>Group Requests</p>
+                            </div>
 
 
                         </td>
