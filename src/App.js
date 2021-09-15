@@ -12,6 +12,7 @@ function App() {
         <div>
             <NavigationBar items={[{
                 text: "Your Account",
+                linkTo: "/Account"
             }, {
                 text: "Your Groups"
             }, {
