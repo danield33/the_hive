@@ -10,5 +10,11 @@
 }
 
 .formInput{
-    height: 20
+    height: 20px;
+    font-size: 20px;
+}
+
+.inputName{
+    font-size: 30px;
+    margin-right: 10px;
 }

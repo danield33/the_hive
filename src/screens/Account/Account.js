@@ -8,9 +8,9 @@ class Account extends Component {
 
     renderCheckBox(){
         return(
-            <div>
-                <p>Private:</p>
-                <input type={'checkbox'}/>
+            <div style={{marginTop: -50}}>
+                <p style={{fontSize: 20}} className={'inputName'}>Private:</p>
+                <input type={'checkbox'} style={{height: 20, width: 20}}/>
             </div>
         )
     }
@@ -32,7 +32,7 @@ class Account extends Component {
                         <td>
                             <div className={'tblDesc'}>
                                 <div>
-                                    <p>Name:</p>
+                                    <p className={'inputName'}>Name:</p>
                                     <input className={'formInput'}/>
                                 </div>
 
@@ -41,7 +41,7 @@ class Account extends Component {
 
                             <div className={'tblDesc'}>
                                 <div>
-                                    <p>Email:</p>
+                                    <p className={'inputName'}>Email:</p>
                                     <input className={'formInput'}/>
                                 </div>
                                 {this.renderCheckBox()}
@@ -50,14 +50,14 @@ class Account extends Component {
                             <div className={'tblDesc'}>
 
                                 <div>
-                                    <p>Alias:</p>
+                                    <p className={'inputName'}>Alias:</p>
                                     <input className={'formInput'}/>
                                 </div>
                                 {this.renderCheckBox()}
 
                             </div>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
-                                <p>Bio/Other Info</p>
+                                <p className={'inputName'}>Bio/Other Info</p>
                                 <textarea/>
                             </div>
 
@@ -67,7 +67,7 @@ class Account extends Component {
 
                             <div className={'tblDesc'}>
                                 <div>
-                                    <p>Language:</p>
+                                    <p className={'inputName'}>Language:</p>
                                     <Dropdown data={[
                                         {
                                             text: "English",
@@ -83,10 +83,16 @@ class Account extends Component {
 
                             <div className={'tblDesc'}>
                                 <div>
-                                    <p>Light/Dark Mode</p>
+                                    <p className={'inputName'}>Light/Dark Mode</p>
                                     <Switch trueColor={'black'} falseColor={'lightgrey'}/>
                                 </div>
                             </div>
+
+                            <br/><br/>
+                            <p className={'inputName'}>Invitations</p>
+                            <br/>
+                            <p className={'inputName'}>Group Requests</p>
+
 
                         </td>
 
