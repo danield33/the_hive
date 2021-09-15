@@ -1,8 +1,21 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './styles.css'
+import {Dropdown} from "../../components/Dropdown";
+import {Switch} from "../../components/Switch";
 
 class Account extends Component {
+
+    renderCheckBox(){
+        return(
+            <div>
+                <p>Private:</p>
+                <input type={'checkbox'}/>
+            </div>
+        )
+    }
+
+
     render() {
         return (
             <div>
@@ -18,19 +31,29 @@ class Account extends Component {
                     <tr>
                         <td>
                             <div className={'tblDesc'}>
-                                <p>Name:</p>
-                                <input className={'formInput'}/>
+                                <div>
+                                    <p>Name:</p>
+                                    <input className={'formInput'}/>
+                                </div>
+
+                                {this.renderCheckBox()}
                             </div>
+
+                            <div className={'tblDesc'}>
+                                <div>
+                                    <p>Email:</p>
+                                    <input className={'formInput'}/>
+                                </div>
+                                {this.renderCheckBox()}
+                            </div>
+
                             <div className={'tblDesc'}>
 
-                                <p>Email:</p>
-                                <input className={'formInput'}/>
-
-                            </div>
-                            <div className={'tblDesc'}>
-
-                                <p>Alias:</p>
-                                <input className={'formInput'}/>
+                                <div>
+                                    <p>Alias:</p>
+                                    <input className={'formInput'}/>
+                                </div>
+                                {this.renderCheckBox()}
 
                             </div>
                             <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -39,6 +62,34 @@ class Account extends Component {
                             </div>
 
                         </td>
+
+                        <td>
+
+                            <div className={'tblDesc'}>
+                                <div>
+                                    <p>Language:</p>
+                                    <Dropdown data={[
+                                        {
+                                            text: "English",
+                                            val: "eng"
+                                        },
+                                        {
+                                            text: "Spanish",
+                                            val: "esp"
+                                        }
+                                    ]} name={'languages'}/>
+                                </div>
+                            </div>
+
+                            <div className={'tblDesc'}>
+                                <div>
+                                    <p>Light/Dark Mode</p>
+                                    <Switch trueColor={'black'} falseColor={'lightgrey'}/>
+                                </div>
+                            </div>
+
+                        </td>
+
                     </tr>
                 </table>
             </div>
