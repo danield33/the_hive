@@ -54,7 +54,7 @@ code {
 .formPostCellContainer{
   display: flex;
   flex-direction: row;
-  border-bottom: black 2px solid
+  border-bottom: black 2px solid;
 }
 
 .cellNumber{

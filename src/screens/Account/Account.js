@@ -3,7 +3,7 @@ import './styles.css'
 import {Dropdown} from "../../components/Dropdown";
 import {Switch} from "../../components/Switch";
 
-class Account extends Component {
+export class Account extends Component {
 
     renderCheckBox(){
         return(
@@ -113,4 +113,3 @@ class Account extends Component {
 
 Account.propTypes = {};
 
-export default Account;

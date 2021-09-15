@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {NavigationBar} from "../components/NavigationBar";
 import {ForumList} from "../components/ForumList";
 import {CreatedList} from "../components/CreatedList";
-import {Route, Switch} from "react-router-dom";
-import ForumPost from './ForumPost'
 
-class HomeScreen extends Component {
+
+export class HomeScreen extends Component {
     render() {
         return (
             <div>
@@ -40,8 +37,6 @@ class HomeScreen extends Component {
 }
 
 HomeScreen.propTypes = {};
-
-export default HomeScreen;
 
 const data = [
     {
