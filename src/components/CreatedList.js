@@ -1,8 +1,5 @@
 import '../index.css'
-import {ForumPostCell} from "./ForumPostCell";
 import useWindowDimensions from "./hooks/useWindowDimensions";
-import {BrowserRouter, Link, Route, Router, Switch} from "react-router-dom";
-import ForumPost from "../screens/ForumPost";
 import React from "react";
 import {Nav} from 'react-bootstrap';
 

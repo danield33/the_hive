@@ -11,8 +11,6 @@ class HomeScreen extends Component {
         return (
             <div>
 
-                <NavigationBar items={["Your Account", "Your Groups", "The Hive"]}/>
-
                 <div style={{padding: 20}}>
                     <input type='text'
                            placeholder={'Search'}
