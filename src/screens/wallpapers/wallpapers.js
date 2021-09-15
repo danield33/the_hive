@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class wallpapers extends Component {
+export class wallpapers extends Component {
     render() {
         return (
             <div>
