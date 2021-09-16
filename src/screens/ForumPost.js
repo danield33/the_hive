@@ -8,7 +8,7 @@ export class ForumPost extends Component{
 
     render(){
         return(
-            <div>
+            <div style={{display: 'flex', flex: 1}}>
 
                 <RTEditor/>
 
