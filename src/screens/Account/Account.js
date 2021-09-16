@@ -17,8 +17,8 @@ export class Account extends Component {
 
     render() {
         return (
-            <div style={{display: 'flex', flex: 1}}>
-                <table border={1} style={{flex: 1}}>
+            <div style={{display: 'flex', flex: 1, padding: 20}}>
+                <table border={1} style={{flex: 1, backgroundColor: 'lightblue'}}>
                     <tr>
                         <th>
                            <p style={{fontSize: 20}}>
