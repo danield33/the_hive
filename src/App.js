@@ -10,15 +10,18 @@ import React from "react";
 function App() {
     return (
         <div>
-            <NavigationBar items={[{
-                text: "Your Account",
-                linkTo: "/Account"
-            }, {
-                text: "Your Groups"
-            }, {
-                text: "The Hive",
-                linkTo: "/"
-            }]}/>
+            <NavigationBar items={[
+                {
+                    text: "Your Account",
+                    linkTo: "/Account"
+                }, {
+                    text: "Your Groups",
+                    linkTo: "/Groups"
+                }, {
+                    text: "The Hive",
+                    linkTo: "/"
+                }
+            ]}/>
             <Routes/>
         </div>
 

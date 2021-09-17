@@ -1,28 +1,23 @@
-import React, { Component, useState } from 'react';
-import {EditorState, convertToRaw} from 'draft-js';
-import { Editor } from 'react-draft-wysiwyg';
-import draftToHtml from 'draftjs-to-html';
-import htmlToDraft from 'html-to-draftjs';
-
+import React, { useEffect, useState } from "react";
+import { Editor } from "react-draft-wysiwyg";
+import { EditorState } from "draft-js";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 export function RTEditor() {
-
-    const [editorState, setEditorState] = useState(EditorState.createEmpty());
-
-    const onEditorStateChange = (editorState) => {
-        setEditorState(editorState)
-    }
-
+    const [editorState, setEditorState] = useState(() =>
+        EditorState.createEmpty()
+    );
+    useEffect(() => {
+        console.log(editorState);
+    }, [editorState]);
     return (
-        <div style={{flex: 1}}>
-            <Editor
-                editorState={editorState}
-                wrapperClassName="demo-wrapper"
-                editorClassName="demo-editor"
-                onEditorStateChange={onEditorStateChange}
-            />
-            <textarea
-                value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}
-            />
+        <div>
+            <h1>Create a Post!</h1>
+            <div style={{ border: "1px solid black", padding: '2px', minHeight: '400px', backgroundColor: 'white' }}>
+                <Editor
+                    editorState={editorState}
+                    onEditorStateChange={setEditorState}
+                />
+            </div>
         </div>
     );
-};
+}

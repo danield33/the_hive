@@ -17,18 +17,18 @@ export class Account extends Component {
 
     render() {
         return (
-            <div style={{display: 'flex', flex: 1}}>
-                <table border={1} style={{flex: 1}}>
+            <div style={{display: 'flex', flex: 1, padding: 20}}>
+                <table border={1} style={{flex: 1, backgroundColor: 'lightblue'}}>
                     <tr>
                         <th>
-                           <p style={{fontSize: 20}}>
+                           <span style={{fontSize: 20}}>
                                Personal Information
-                           </p>
+                           </span>
                         </th>
                         <th>
-                            <p style={{fontSize: 20}}>
+                            <span style={{fontSize: 20}}>
                                 Display Settings
-                            </p>
+                            </span>
                         </th>
                     </tr>
                     <tr>

@@ -23,6 +23,7 @@ import image20 from "./images/cube.gif"
 
 
 export  class wallpapers extends Component {
+
     render() {
         return (
             <div>
