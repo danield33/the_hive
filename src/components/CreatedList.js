@@ -9,11 +9,7 @@ export function CreatedList({data = []}) {
 
         return (
             <div className={'formPostCellContainer'}>
-                <p style={{
-                    fontSize: 25,
-                    paddingLeft: 20,
-                    paddingRight: 20
-                }}>{item.name}</p>
+                <p>{item.name}</p>
             </div>
         )
     }
@@ -35,13 +31,7 @@ export function CreatedList({data = []}) {
 
                 <Nav.Link href={'/Post'}>
                     <div className={'triangle'} style={{alignSelf: 'flex-end'}} >
-                        <p style={{
-                            transform: 'rotate(310deg)',
-                            position: 'absolute',
-                            marginLeft: -60,
-                            marginTop: 45,
-                            textAlign: 'center'
-                        }}>Publish Idea</p>
+                        <p>Publish Idea</p>
                     </div>
                 </Nav.Link>
 

@@ -1,5 +1,4 @@
 import {ForumPostCell} from "./ForumPostCell";
-import useWindowDimensions from "./hooks/useWindowDimensions";
 
 import '../index.css'
 

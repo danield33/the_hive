@@ -122,3 +122,17 @@ code {
   color: yellow;
   align-self: center;
 }
+
+.formPostCellContainer p{
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.triangle p {
+  transform: rotate(310deg);
+  position: absolute;
+  margin-left: -60px;
+  margin-top: 45px;
+  text-align: center;
+}
