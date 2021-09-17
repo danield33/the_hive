@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import image from "./images/IMG_3764.JPG"
 import image1 from "./images/EqoV1eiXYAE5wEc.jpg"
 import image2 from "./images/Deviled Cider.png"
@@ -22,7 +22,7 @@ import image19 from "./images/PuyoPictureCombine.png"
 import image20 from "./images/cube.gif"
 
 
-export  class wallpapers extends Component {
+export class wallpapers extends Component {
 
     render() {
         return (
@@ -73,7 +73,6 @@ export  class wallpapers extends Component {
                 <img src={image16}/>
 
 
-
                 <img src={image17}/>
 
                 <img src={image18}/>
@@ -84,8 +83,10 @@ export  class wallpapers extends Component {
                 <br></br>
                 <img src={image20}/>
 
+                >>>>>>> 22cefe958df92fdd81dae06c43622d1eef360cbc
             </div>
 
         )
 
-    }}
+    }
+}
