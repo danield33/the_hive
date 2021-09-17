@@ -21,14 +21,14 @@ export class Account extends Component {
                 <table border={1} style={{flex: 1, backgroundColor: 'lightblue'}}>
                     <tr>
                         <th>
-                           <p style={{fontSize: 20}}>
+                           <span style={{fontSize: 20}}>
                                Personal Information
-                           </p>
+                           </span>
                         </th>
                         <th>
-                            <p style={{fontSize: 20}}>
+                            <span style={{fontSize: 20}}>
                                 Display Settings
-                            </p>
+                            </span>
                         </th>
                     </tr>
                     <tr>
