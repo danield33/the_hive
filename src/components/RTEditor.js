@@ -6,13 +6,11 @@ export function RTEditor() {
     const [editorState, setEditorState] = useState(() =>
         EditorState.createEmpty()
     );
-    useEffect(() => {
-        console.log(editorState);
-    }, [editorState]);
+
     return (
         <div>
             <h1>Create a Post!</h1>
-            <div style={{ border: "1px solid black", padding: '2px', minHeight: '400px', backgroundColor: 'white' }}>
+            <div id={"editorContainer"}>
                 <Editor
                     editorState={editorState}
                     onEditorStateChange={setEditorState}

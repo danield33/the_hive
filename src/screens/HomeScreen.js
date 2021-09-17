@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {ForumList} from "../components/ForumList";
 import {CreatedList} from "../components/CreatedList";
+import '../index.css'
 
 
 export class HomeScreen extends Component {
@@ -13,16 +14,10 @@ export class HomeScreen extends Component {
                            placeholder={'Search'}
                            className={'searchBar'}/>
 
-                    <div style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-between'
-                    }}>
+                    <div className={"flex row between"}>
 
                         <ForumList data={data}/>
-                        <div style={{
-                            marginLeft: 20
-                        }}>
+                        <div id={"createdListMargin"}>
                             <CreatedList/>
                         </div>
 

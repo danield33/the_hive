@@ -19,7 +19,8 @@ code {
   height: 50px;
   background-color: white;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+
 }
 
 .navBar button{
@@ -82,4 +83,42 @@ code {
 }
 .triangle:hover{
   border-bottom: 100px solid #358;
+}
+
+.flex.row.between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#createdListMargin{
+  margin-left: 20px
+}
+
+.display.flex{
+  display: flex;
+  flex: 1;
+}
+
+#editorContainer{
+  border: 1px solid black;
+  padding: 2px;
+  min-height: 400px;
+  background-color: white;
+}
+
+.newButton{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: lightgreen;
+  border-radius: 25px;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.plusButton{
+  font-size: 45px;
+  color: yellow;
+  align-self: center;
 }

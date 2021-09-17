@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-
-import {Route, Switch} from "react-router-dom";
-import HomeScreen from "./HomeScreen";
+import '../index.css'
 import {RTEditor} from "../components/RTEditor";
 
 export class ForumPost extends Component{
 
     render(){
         return(
-            <div style={{display: 'flex', flex: 1}}>
+            <div className={'display flex'}>
 
                 <RTEditor/>
 

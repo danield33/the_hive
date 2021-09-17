@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import '../../index.css'
 
 export class Groups extends Component {
 
@@ -26,20 +26,8 @@ export class Groups extends Component {
                 <table style={{flex: 1}} border={2}>
                     <tr>
                         <th style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <button style={{
-                                display: 'flex',
-                                width: 50,
-                                height: 50,
-                                backgroundColor: 'lightgreen',
-                                borderRadius: 25,
-                                justifyContent: 'center',
-                                marginRight: 20
-                            }}>
-                                <p style={{
-                                    fontSize: 45,
-                                    color: 'yellow',
-                                    alignSelf: 'center'
-                                }}>+</p>
+                            <button className={"newButton"}>
+                                <p className={"plusButton"}>+</p>
                             </button>
                             Create Group
                         </th>
